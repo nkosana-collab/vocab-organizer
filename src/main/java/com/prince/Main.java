@@ -15,6 +15,17 @@ public class Main {
         System.out.println("Hello And Welcome\n\n" + "Valid Commands Are [\"add\", \"search\", \"help\", \"quit\"]");
 
         scanner = new Scanner(System.in);
+        Command command;
+        while(true){
+            System.out.println("Enter Command: ");
+            String userInput = scanner.nextLine();
+
+            if(userInput.equalsIgnoreCase("quit")) break;
+
+            
+
+        }
+        
 
         
     }
