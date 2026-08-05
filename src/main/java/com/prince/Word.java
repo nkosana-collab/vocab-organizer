@@ -3,24 +3,30 @@ package com.prince;
 public class Word {
 
     private String word;
-    private String meaning;
+    private String defination;
     private String usecase;
 
-    public Word(String word, String meaning, String usecase){
+    public Word(String word, String defination, String usecase){
         
         this.word = word;
         this.usecase = usecase;
-        this.meaning = meaning;
+        this.defination = defination;
 
     }
 
     public String getWord(){
         return word;
     }
-    public String getMeaning() {
-        return meaning;
+    public String getDefination() {
+        return defination;
     }
     public String getUsecase() {
         return usecase;
+    }
+
+    public void printWord(){
+        
+        String wordSummary = "WORD:\n" + word + "\nDEFINATION:\n" + defination + "USECASE:\n" + usecase;
+        System.out.println(wordSummary);
     }
 }
