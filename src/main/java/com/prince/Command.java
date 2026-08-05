@@ -15,7 +15,7 @@ public abstract class Command {
         this.word = word;
     }
 
-    public abstract String execute();
+    public abstract void execute();
 
     public static Command create(String instruction){
 
