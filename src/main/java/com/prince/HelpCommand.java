@@ -8,6 +8,8 @@ public class HelpCommand extends Command{
 
     @Override
     public void execute(){
-        
+
+        String instructions = "USAGE GUIDE: \n" + "\"add\" -> add [word]\n" + "\"search\" -> search [word]\n" + "\"help\" -> help\n" + "\"quit\"";
+        System.out.println(instructions);
     }
 }
