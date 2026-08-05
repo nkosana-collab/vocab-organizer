@@ -16,17 +16,26 @@ public class Main {
 
         scanner = new Scanner(System.in);
         Command command;
+
         while(true){
+
             System.out.println("Enter Command: ");
             String userInput = scanner.nextLine();
 
             if(userInput.equalsIgnoreCase("quit")) break;
 
-            
+            try{
+                command = Command.create(userInput);
+                command.execute();
 
+            }catch (IllegalArgumentException e){
+
+                System.out.println("Invalid Input!");
+                command = Command.create("help");
+                command.execute();
+            }
         }
         
-
-        
+        System.out.println("GOOD-VOCAB-HUNTING!!!");
     }
 }
