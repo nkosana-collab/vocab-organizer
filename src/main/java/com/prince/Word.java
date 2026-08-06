@@ -26,7 +26,7 @@ public class Word {
 
     public void printWord(){
         
-        String wordSummary = "WORD:\n" + word + "\nDEFINATION:\n" + defination + "USECASE:\n" + usecase;
+        String wordSummary = "WORD:\n" + word + "\nDEFINATION:\n" + defination + "\nUSECASE:\n" + usecase;
         System.out.println(wordSummary);
     }
 }

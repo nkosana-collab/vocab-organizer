@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Dixionary {
 
-     private static List<Word> words;
+     private List<Word> words;
      static Scanner scanner;
 
      public Dixionary(){
@@ -35,8 +35,10 @@ public class Dixionary {
 
         for(Word word : words){
             if(word.getWord().equalsIgnoreCase(searchedWord)){
-                printWord(word);
+               word.printWord();
+               return;
             }
         }
+        System.out.println("No match");
      }
 }

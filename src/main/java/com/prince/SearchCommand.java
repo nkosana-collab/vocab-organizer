@@ -5,9 +5,10 @@ public class SearchCommand extends Command{
     private Dixionary dixionary;
     private String word;
 
-    public SearchCommand(String word){
-        super("search", word);
+    public SearchCommand(String word, Dixionary dixionary){
+        super("search", word, dixionary);
         this.word = word;
+        this.dixionary = dixionary;
     }
 
     @Override

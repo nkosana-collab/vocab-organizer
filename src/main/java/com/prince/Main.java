@@ -5,12 +5,14 @@ import java.util.Scanner;
 public class Main {
 
     static Scanner scanner;
+    private static Dixionary dixionary = new Dixionary();
 
     public static void main(String[] args) {
 
         /*1. Welcome the user
          *2. Provide valid commands ["add", "search", "help", "quit"] 
-         *3. While true keep promping them for their command*/
+         *3. While true keep promping them for their command
+         */
 
         System.out.println("Hello And Welcome\n\n" + "Valid Commands Are [\"add\", \"search\", \"help\", \"quit\"]");
 
@@ -25,17 +27,14 @@ public class Main {
             if(userInput.equalsIgnoreCase("quit")) break;
 
             try{
-                command = Command.create(userInput);
+                command = Command.create(userInput, dixionary);
                 command.execute();
 
             }catch (IllegalArgumentException e){
 
                 System.out.println("Invalid Input!");
-                command = Command.create("help");
-                command.execute();
             }
         }
-        
         System.out.println("GOOD-VOCAB-HUNTING!!!");
     }
 }
