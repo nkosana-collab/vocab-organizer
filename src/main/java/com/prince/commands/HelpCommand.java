@@ -1,4 +1,4 @@
-package com.prince;
+package com.prince.commands;
 
 public class HelpCommand extends Command{
     

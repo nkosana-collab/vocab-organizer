@@ -2,6 +2,9 @@ package com.prince;
 
 import java.util.Scanner;
 
+import com.prince.commands.Command;
+import com.prince.services.Dixionary;
+
 public class Main {
 
     static Scanner scanner;

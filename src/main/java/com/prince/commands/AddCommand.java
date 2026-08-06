@@ -1,4 +1,6 @@
-package com.prince;
+package com.prince.commands;
+
+import com.prince.services.Dixionary;
 
 public class AddCommand extends Command{
 

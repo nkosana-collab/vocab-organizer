@@ -1,4 +1,4 @@
-package com.prince;
+package com.prince.model;
 
 public class Word {
 
@@ -24,9 +24,8 @@ public class Word {
         return usecase;
     }
 
-    public void printWord(){
+    public String getSummary(){
         
-        String wordSummary = "WORD:\n" + word + "\nDEFINATION:\n" + defination + "\nUSECASE:\n" + usecase;
-        System.out.println(wordSummary);
+        return "WORD:\n" + getWord() + "\nDEFINATION:\n" + getDefination() + "\nUSECASE:\n" + getUsecase();
     }
 }

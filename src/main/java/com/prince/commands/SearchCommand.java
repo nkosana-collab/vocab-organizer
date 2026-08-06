@@ -1,4 +1,6 @@
-package com.prince;
+package com.prince.commands;
+
+import com.prince.services.Dixionary;
 
 public class SearchCommand extends Command{
 
@@ -13,6 +15,6 @@ public class SearchCommand extends Command{
 
     @Override
     public void execute(){
-        dixionary.searchWord(word);
+        System.out.println(dixionary.searchWord(word));;
     }
 }
